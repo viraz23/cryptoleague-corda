@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ComponentScan("com.example.mq")
 public class RabbitMqConfig {
-    private static final String SIMPLE_MESSAGE_QUEUE = "corda.queue.name";
+    private static final String SIMPLE_MESSAGE_QUEUE = "cryptoleaguecorda.outbound";
 
     @Bean
     public ConnectionFactory connectionFactory() {
